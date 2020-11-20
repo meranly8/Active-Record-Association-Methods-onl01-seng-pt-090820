@@ -14,6 +14,7 @@ class Song < ActiveRecord::Base
       new_drake = Song.create(artist: drake)
     else
       drake = Artist.create(name: "Drake")
+      new_drake = Song.create(artist: drake)
     end
   end
 end
